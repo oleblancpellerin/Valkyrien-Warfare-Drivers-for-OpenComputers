@@ -17,6 +17,7 @@ public class BlockBase extends Block {
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setCreativeTab(VWDrivers.creativeTab);
 	}
 	
 	public void registerItemModel(ItemBlock itemBlock) {
@@ -27,5 +28,5 @@ public class BlockBase extends Block {
 		super.setCreativeTab(tab);
 		return this;
 	}
-
+	
 }

@@ -6,7 +6,6 @@ import io.github.djeezuss.VWDrivers.block.BlockTileEntity;
 import io.github.djeezuss.VWDrivers.tileEntity.TileEntityCounter;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
@@ -19,7 +18,6 @@ public class BlockCounter extends BlockTileEntity<TileEntityCounter> {
 
 	public BlockCounter() {
 		super(Material.ROCK, "counter");
-		setCreativeTab(CreativeTabs.MISC);
 	}
 	
 	@Override

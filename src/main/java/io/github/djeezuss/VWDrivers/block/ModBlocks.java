@@ -1,19 +1,18 @@
 package io.github.djeezuss.VWDrivers.block;
 
 import io.github.djeezuss.VWDrivers.block.counter.BlockCounter;
+import io.github.djeezuss.VWDrivers.block.shipDataCollector.BlockShipDataCollector;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 	
-	public static BlockBase shipInterface;
+	public static BlockShipDataCollector shipInterface;
 	public static BlockCounter counter;
 	
 	public static void init() {
-		shipInterface = register(new BlockBase(Material.ROCK,"shipInterface").setCreativeTab(CreativeTabs.MISC));
+		shipInterface = register(new BlockShipDataCollector());
 		counter = register(new BlockCounter());
 	}
 

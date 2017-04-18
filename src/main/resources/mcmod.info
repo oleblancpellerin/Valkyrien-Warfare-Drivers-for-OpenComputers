@@ -1,0 +1,16 @@
+[
+{
+  "modid": "vwdrivers",
+  "name": "Valkyrien Warfare Drivers",
+  "description": "An addon mod to Valkyrien Warfare and OpenComputers.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Djeezuss"],
+  "credits": "BigBastard and DaPorkchop_, for making Valkyrien Warfare",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["valkyrienwarfare","OpenComputers"]
+}
+]
