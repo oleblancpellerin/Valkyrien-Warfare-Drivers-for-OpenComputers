@@ -1,19 +1,16 @@
 package io.github.djeezuss.VWDrivers.block;
 
-import io.github.djeezuss.VWDrivers.block.counter.BlockCounter;
-import io.github.djeezuss.VWDrivers.block.shipDataCollector.BlockShipDataCollector;
+import io.github.djeezuss.VWDrivers.block.shipInterface.BlockShipInterface;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 	
-	public static BlockShipDataCollector shipInterface;
-	public static BlockCounter counter;
+	public static BlockShipInterface shipInterface;
 	
 	public static void init() {
-		shipInterface = register(new BlockShipDataCollector());
-		counter = register(new BlockCounter());
+		shipInterface = register(new BlockShipInterface());
 	}
 
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {
