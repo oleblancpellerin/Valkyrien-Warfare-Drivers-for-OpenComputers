@@ -15,15 +15,16 @@ public class BlockBase extends Block {
 		
 		this.name = name;
 		
-		setUnlocalizedName(name);
-		setRegistryName(name);
-		setCreativeTab(VWDrivers.creativeTab);
+		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
+		this.setCreativeTab(VWDrivers.creativeTab);
 	}
 	
 	public void registerItemModel(ItemBlock itemBlock) {
 		VWDrivers.proxy.registerItemRenderer(itemBlock, 0, name);
 	}
-	
+
+	@Override
 	public BlockBase setCreativeTab(CreativeTabs tab) {
 		super.setCreativeTab(tab);
 		return this;
