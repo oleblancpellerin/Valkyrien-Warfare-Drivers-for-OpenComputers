@@ -1,6 +1,7 @@
 package io.github.djeezuss.VWDrivers;
 
 import io.github.djeezuss.VWDrivers.proxy.CommonProxy;
+import io.github.djeezuss.VWDrivers.recipe.ModRecipes;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -28,6 +29,7 @@ public class VWDrivers {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent e) {
+		ModRecipes.init();
 		proxy.init(e);
 	}
 

@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 public class BlockShipInterface extends BlockTileEntity<TileEntityShipInterface> {
 	
 	public BlockShipInterface() {
-		super(Material.ROCK, "shipInterface");
+		super(Material.ROCK, "ship_interface");
 	}
 	
 	@Override
