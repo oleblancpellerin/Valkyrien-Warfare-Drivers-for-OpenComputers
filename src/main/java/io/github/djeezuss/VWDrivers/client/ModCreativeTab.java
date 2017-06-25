@@ -1,20 +1,20 @@
-package io.github.djeezuss.VWDrivers;
+package io.github.djeezuss.VWDrivers.client;
 
+import io.github.djeezuss.VWDrivers.Reference;
 import io.github.djeezuss.VWDrivers.block.ModBlocks;
-import io.github.djeezuss.VWDrivers.item.ModItems;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 
-public class ModCreativeTab extends CreativeTabs {
-
+/**
+ * Created by Djeezuss on 2017-06-24.
+ */
+public class ModCreativeTab extends CreativeTabs{
 	public ModCreativeTab() {
-		super(Reference.MOD_ID);
+		super(CreativeTabs.getNextID(), Reference.MOD_ID);
 	}
 
 	@Override
 	public Item getTabIconItem() {
 		return Item.getItemFromBlock(ModBlocks.shipInterface);
 	}
-
 }

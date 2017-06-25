@@ -41,7 +41,7 @@ minecraft {
 dependencies {
 	compile "li.cil.oc:OpenComputers:MC1.10.2-1.6.+:api"
 	//compile "ValkyrienWarfareRevamped:valkyrienwarfare:1.10.2-0.8.7-+:dev"
-	provided files("libs--/ValkyrienWarfareRevamped-1.10.2-v0.9_alpha-0-dev.jar")
+	compile files("libs--/ValkyrienWarfareRevamped-1.10.2-v0.9_alpha-0-dev.jar")
 }
 
 processResources

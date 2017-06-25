@@ -2,6 +2,7 @@ package io.github.djeezuss.VWDrivers;
 
 import io.github.djeezuss.VWDrivers.proxy.CommonProxy;
 import io.github.djeezuss.VWDrivers.recipe.ModRecipes;
+import io.github.djeezuss.VWDrivers.client.ModCreativeTab;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

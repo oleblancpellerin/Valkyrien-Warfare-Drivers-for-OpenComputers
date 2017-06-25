@@ -1,0 +1,9 @@
+# Items
+#   item.UNLOCALIZED.name
+
+# Blocks
+#   tile.UNLOCALIZED.name
+tile.ship_interface.name=Ship Interface
+
+# Creative Tab
+itemGroup.vwdrivers=Valkyrien Warfare Drivers
