@@ -25,7 +25,7 @@ public class VWDrivers {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
-				proxy.preInit(e);
+		proxy.preInit(e);
 	}
 	
 	@EventHandler

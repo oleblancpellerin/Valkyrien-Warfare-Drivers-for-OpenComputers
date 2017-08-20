@@ -1,8 +1,6 @@
 package io.github.djeezuss.VWDrivers.proxy;
 
 import io.github.djeezuss.VWDrivers.Reference;
-import io.github.djeezuss.VWDrivers.block.ModBlocks;
-import io.github.djeezuss.VWDrivers.item.ModItems;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -14,18 +12,17 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
-		ModItems.init();
-		ModBlocks.init();
+		super.preInit(e);
 	}
 
 	@Override
 	public void init(FMLInitializationEvent e) {
-		
+		super.init(e);
 	}
 
 	@Override
 	public void postInit(FMLPostInitializationEvent e) {
-		
+		super.postInit(e);
 	}
 	
 	@Override

@@ -1,5 +1,7 @@
 package io.github.djeezuss.VWDrivers.proxy;
 
+import io.github.djeezuss.VWDrivers.block.ModBlocks;
+import io.github.djeezuss.VWDrivers.item.ModItems;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -8,7 +10,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class CommonProxy {
 	
 	public void preInit(FMLPreInitializationEvent e) {
-		
+		ModItems.init();
+		ModBlocks.init();
 	}
 	
 	public void init(FMLInitializationEvent e) {
