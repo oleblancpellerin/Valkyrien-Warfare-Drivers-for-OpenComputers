@@ -15,7 +15,7 @@ public class ModRecipes {
 	public static void init() {
 		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.shipInterface), "ICI", "TOT", "ICI",
 			'I', Items.IRON_INGOT,
-			'C', ValkyrienWarfareWorldMod.etheriumCrystal,
+			'C', ValkyrienWarfareWorldMod.instance.etheriumCrystal,
 			'T', li.cil.oc.api.Items.get("transistor").createItemStack(1),
 			'O', Blocks.field_190976_dk); //Observer block
 	}
