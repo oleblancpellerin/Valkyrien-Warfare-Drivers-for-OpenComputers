@@ -1,8 +1,8 @@
 package io.github.djeezuss.VWDrivers;
 
+import io.github.djeezuss.VWDrivers.client.ModCreativeTab;
 import io.github.djeezuss.VWDrivers.proxy.CommonProxy;
 import io.github.djeezuss.VWDrivers.recipe.ModRecipes;
-import io.github.djeezuss.VWDrivers.client.ModCreativeTab;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -11,8 +11,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = "[1.10.2]",
-	dependencies="required-after:valkyrienwarfare;required-after:OpenComputers")
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = "[1.11.2]",
+	dependencies="required-after:valkyrienwarfare;required-after:opencomputers")
 public class VWDrivers {
 	
 	@SidedProxy(clientSide = Reference.CLIENT, serverSide = Reference.SERVER)
