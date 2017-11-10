@@ -1,7 +1,5 @@
 package io.github.djeezuss.VWDrivers.tileEntity;
 
-import ValkyrienWarfareBase.API.ValkyrienWarfareHooks;
-import ValkyrienWarfareBase.API.Vector;
 import li.cil.oc.api.machine.Arguments;
 import li.cil.oc.api.machine.Callback;
 import li.cil.oc.api.machine.Context;
@@ -9,6 +7,8 @@ import li.cil.oc.api.network.SimpleComponent;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fml.common.Optional.Interface;
 import net.minecraftforge.fml.common.Optional.Method;
+import valkyrienwarfare.api.ValkyrienWarfareHooks;
+import valkyrienwarfare.api.Vector;
 
 @Interface(iface = "li.cil.oc.api.network.SimpleComponent", modid = "opencomputers")
 public class TileEntityShipInterface extends TileEntity implements SimpleComponent{
