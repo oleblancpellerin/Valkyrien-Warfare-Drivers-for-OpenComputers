@@ -21,8 +21,8 @@ public class TileEntityShipInterface extends TileEntity implements SimpleCompone
 	@Callback
 	@Method(modid = "opencomputers")
 	public Object[] getMass(Context context, Arguments args) {
-		if(ValkyrienWarfareHooks.isBlockPartOfShip(worldObj, pos)) {
-			return new Object[] { ValkyrienWarfareHooks.getShipMass(ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos)) };
+		if(ValkyrienWarfareHooks.isBlockPartOfShip(world, pos)) {
+			return new Object[] { ValkyrienWarfareHooks.getShipMass(ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos)) };
 		}
 		return new Object[] { null };
 	}
@@ -30,8 +30,8 @@ public class TileEntityShipInterface extends TileEntity implements SimpleCompone
 	@Callback
 	@Method(modid = "opencomputers")
 	public Object[] getPosition(Context context, Arguments args) {
-		if(ValkyrienWarfareHooks.isBlockPartOfShip(worldObj, pos)) {
-			Vector ship = new Vector(ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos));
+		if(ValkyrienWarfareHooks.isBlockPartOfShip(world, pos)) {
+			Vector ship = new Vector(ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos));
 			return new Object[] { ship.X, ship.Y, ship.Z };
 		}
 		return new Object[] { null };
@@ -40,8 +40,8 @@ public class TileEntityShipInterface extends TileEntity implements SimpleCompone
 	@Callback
 	@Method(modid = "opencomputers")
 	public Object[] getPitch(Context context, Arguments args) {
-		if(ValkyrienWarfareHooks.isBlockPartOfShip(worldObj, pos)) {
-			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos).pitch };
+		if(ValkyrienWarfareHooks.isBlockPartOfShip(world, pos)) {
+			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos).pitch };
 		}
 		return new Object[] { null };
 	}
@@ -49,8 +49,8 @@ public class TileEntityShipInterface extends TileEntity implements SimpleCompone
 	@Callback
 	@Method(modid = "opencomputers")
 	public Object[] getYaw(Context context, Arguments args) {
-		if(ValkyrienWarfareHooks.isBlockPartOfShip(worldObj, pos)) {
-			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos).yaw };
+		if(ValkyrienWarfareHooks.isBlockPartOfShip(world, pos)) {
+			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos).yaw };
 		}
 		return new Object[] { null };
 	}
@@ -58,8 +58,8 @@ public class TileEntityShipInterface extends TileEntity implements SimpleCompone
 	@Callback
 	@Method(modid = "opencomputers")
 	public Object[] getRoll(Context context, Arguments args) {
-		if(ValkyrienWarfareHooks.isBlockPartOfShip(worldObj, pos)) {
-			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos).roll };
+		if(ValkyrienWarfareHooks.isBlockPartOfShip(world, pos)) {
+			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos).roll };
 		}
 		return new Object[] { null };
 	}
@@ -67,9 +67,9 @@ public class TileEntityShipInterface extends TileEntity implements SimpleCompone
 	@Callback
 	@Method(modid = "opencomputers")
 	public Object[] getYawPitch(Context context, Arguments args) {
-		if(ValkyrienWarfareHooks.isBlockPartOfShip(worldObj, pos)) {
-			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos).yaw,
-					ValkyrienWarfareHooks.getShipEntityManagingPos(worldObj, pos).pitch };
+		if(ValkyrienWarfareHooks.isBlockPartOfShip(world, pos)) {
+			return new Object[] { ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos).yaw,
+					ValkyrienWarfareHooks.getShipEntityManagingPos(world, pos).pitch };
 		}
 		return new Object[] { null };
 	}
