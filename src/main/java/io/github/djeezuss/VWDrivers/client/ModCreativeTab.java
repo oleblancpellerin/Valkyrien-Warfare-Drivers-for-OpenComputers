@@ -16,5 +16,4 @@ public class ModCreativeTab extends CreativeTabs {
 	public ItemStack getTabIconItem() {
 		return new ItemStack(Item.getItemFromBlock(ModBlocks.shipInterface));
 	}
-
 }
